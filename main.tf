@@ -1,5 +1,4 @@
 provider "aws" {
-  version = "~> 3.0"
   region  = var.region
 }
 
@@ -125,6 +124,8 @@ resource "aws_instance" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
+#    Department = "devops team"
+#    Billable = "true"
   }
 }
 
